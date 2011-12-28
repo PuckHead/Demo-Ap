@@ -1,10 +1,10 @@
-<%= form_for(@microspost) do |f| %>
-  <% if @microspost.errors.any? %>
+<%= form_for(@micropost) do |f| %>
+  <% if @micropost.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@microspost.errors.count, "error") %> prohibited this microspost from being saved:</h2>
+      <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
 
       <ul>
-      <% @microspost.errors.full_messages.each do |msg| %>
+      <% @micropost.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
